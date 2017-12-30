@@ -27,7 +27,7 @@ AlipayApiManager.sharedInstance.pay(data: data) { (result: String) in
 ```
 
 ### WXPayApiManager 微信支付类
-``` swfit
+``` swift
 WXPayApiManager.sharedInstance.pay(data: data) { (result: String) in
 		// 支付结果回调处理
 		//guard let payJSCallBack = self.payCallBack else {
