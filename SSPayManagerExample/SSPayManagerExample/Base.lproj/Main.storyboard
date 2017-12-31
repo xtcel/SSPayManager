@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SSPayManagerExample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SSPayManager" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8ci-Zr-1o6">
+                                <rect key="frame" x="105" y="119" width="164.5" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="omY-Cc-E2V"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="23"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jcj-u6-sGO">
+                                <rect key="frame" x="112.5" y="318.5" width="150" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="ggv-9h-b04"/>
+                                    <constraint firstAttribute="width" constant="150" id="qkt-kT-flU"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <inset key="titleEdgeInsets" minX="20" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="微信支付" image="wxpay_logo">
+                                    <color key="titleColor" red="0.28235294117647058" green="0.28235294117647058" blue="0.28235294117647058" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="wxpayButtonClickedEvent:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LSd-iM-jll"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gm1-es-hUU">
+                                <rect key="frame" x="112.5" y="388.5" width="150" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="Kff-jy-h8A"/>
+                                    <constraint firstAttribute="height" constant="50" id="dtq-Qn-HO6"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <inset key="titleEdgeInsets" minX="20" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="支付宝 " image="alipay_logo">
+                                    <color key="titleColor" red="0.28235294117647058" green="0.28235294117647058" blue="0.28235294117647058" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="alipayButtonClickedEvent:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PnR-QS-2Ft"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.89411764709999997" green="0.88235294119999996" blue="0.87450980389999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="8ci-Zr-1o6" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="99" id="6x2-QM-SPg"/>
+                            <constraint firstItem="8ci-Zr-1o6" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="71d-oZ-b2y"/>
+                            <constraint firstItem="gm1-es-hUU" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="iQ6-en-A5S"/>
+                            <constraint firstItem="Jcj-u6-sGO" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="l4q-w7-Pwh"/>
+                            <constraint firstItem="gm1-es-hUU" firstAttribute="top" secondItem="Jcj-u6-sGO" secondAttribute="bottom" constant="20" id="lqV-yb-SGO"/>
+                            <constraint firstItem="Jcj-u6-sGO" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="wbe-S9-7Oz"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="alipay_logo" width="45" height="45"/>
+        <image name="wxpay_logo" width="45" height="45"/>
+    </resources>
+</document>

@@ -1,0 +1,738 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1360C9121FF8BDB200C6593D /* README.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1360C90D1FF8BDB200C6593D /* README.txt */; };
+		1360C9131FF8BDB200C6593D /* libWeChatSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1360C90E1FF8BDB200C6593D /* libWeChatSDK.a */; };
+		1360C9161FF8C12800C6593D /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 1360C9151FF8C12800C6593D /* libsqlite3.0.tbd */; };
+		1360C9181FF8C13000C6593D /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 1360C9171FF8C13000C6593D /* libz.tbd */; };
+		1360C91A1FF8C13A00C6593D /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1360C9191FF8C13A00C6593D /* Security.framework */; };
+		1360C91C1FF8C15400C6593D /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1360C91B1FF8C15300C6593D /* SystemConfiguration.framework */; };
+		1360C91E1FF8C16800C6593D /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1360C91D1FF8C16800C6593D /* CoreTelephony.framework */; };
+		1360C9201FF8C1BC00C6593D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1360C91F1FF8C1BB00C6593D /* UIKit.framework */; };
+		1360C9221FF8C1C800C6593D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1360C9211FF8C1C800C6593D /* Foundation.framework */; };
+		1360C9241FF8C5F400C6593D /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 1360C9231FF8C5F300C6593D /* libc++.tbd */; };
+		1360C9261FF8C62400C6593D /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1360C9251FF8C62400C6593D /* CoreMotion.framework */; };
+		13A943491FF7866900BBB936 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13A943481FF7866900BBB936 /* AppDelegate.swift */; };
+		13A9434B1FF7866900BBB936 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13A9434A1FF7866900BBB936 /* ViewController.swift */; };
+		13A9434E1FF7866900BBB936 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13A9434C1FF7866900BBB936 /* Main.storyboard */; };
+		13A943501FF7866900BBB936 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13A9434F1FF7866900BBB936 /* Assets.xcassets */; };
+		13A943531FF7866900BBB936 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13A943511FF7866900BBB936 /* LaunchScreen.storyboard */; };
+		13A9435E1FF7866900BBB936 /* SSPayManagerExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13A9435D1FF7866900BBB936 /* SSPayManagerExampleTests.swift */; };
+		13A943691FF7866900BBB936 /* SSPayManagerExampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13A943681FF7866900BBB936 /* SSPayManagerExampleUITests.swift */; };
+		13A9437A1FF7869200BBB936 /* BasePayManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13A943771FF7869200BBB936 /* BasePayManager.swift */; };
+		13A9437B1FF7869200BBB936 /* AlipayApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13A943781FF7869200BBB936 /* AlipayApiManager.swift */; };
+		13A9437C1FF7869200BBB936 /* WXPayApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13A943791FF7869200BBB936 /* WXPayApiManager.swift */; };
+		13A943891FF787AF00BBB936 /* AlipaySDK.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 13A943841FF787AE00BBB936 /* AlipaySDK.bundle */; };
+		13A9438A1FF787AF00BBB936 /* AlipaySDK.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 13A943841FF787AE00BBB936 /* AlipaySDK.bundle */; };
+		13A9438B1FF787AF00BBB936 /* AlipaySDK.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 13A943841FF787AE00BBB936 /* AlipaySDK.bundle */; };
+		13A9438C1FF787AF00BBB936 /* AlipaySDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13A943851FF787AE00BBB936 /* AlipaySDK.framework */; };
+		13A9438D1FF787AF00BBB936 /* AlipaySDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13A943851FF787AE00BBB936 /* AlipaySDK.framework */; };
+		13A9438E1FF787AF00BBB936 /* AlipaySDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13A943851FF787AE00BBB936 /* AlipaySDK.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		13A9435A1FF7866900BBB936 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 13A9433D1FF7866900BBB936 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 13A943441FF7866900BBB936;
+			remoteInfo = SSPayManagerExample;
+		};
+		13A943651FF7866900BBB936 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 13A9433D1FF7866900BBB936 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 13A943441FF7866900BBB936;
+			remoteInfo = SSPayManagerExample;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1360C90D1FF8BDB200C6593D /* README.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.txt; sourceTree = "<group>"; };
+		1360C90E1FF8BDB200C6593D /* libWeChatSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libWeChatSDK.a; sourceTree = "<group>"; };
+		1360C90F1FF8BDB200C6593D /* WechatAuthSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WechatAuthSDK.h; sourceTree = "<group>"; };
+		1360C9101FF8BDB200C6593D /* WXApiObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApiObject.h; sourceTree = "<group>"; };
+		1360C9111FF8BDB200C6593D /* WXApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApi.h; sourceTree = "<group>"; };
+		1360C9151FF8C12800C6593D /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
+		1360C9171FF8C13000C6593D /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		1360C9191FF8C13A00C6593D /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		1360C91B1FF8C15300C6593D /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		1360C91D1FF8C16800C6593D /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		1360C91F1FF8C1BB00C6593D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		1360C9211FF8C1C800C6593D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		1360C9231FF8C5F300C6593D /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		1360C9251FF8C62400C6593D /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		13A943451FF7866900BBB936 /* SSPayManagerExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SSPayManagerExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		13A943481FF7866900BBB936 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		13A9434A1FF7866900BBB936 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		13A9434D1FF7866900BBB936 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		13A9434F1FF7866900BBB936 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		13A943521FF7866900BBB936 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		13A943541FF7866900BBB936 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		13A943591FF7866900BBB936 /* SSPayManagerExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SSPayManagerExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		13A9435D1FF7866900BBB936 /* SSPayManagerExampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SSPayManagerExampleTests.swift; sourceTree = "<group>"; };
+		13A9435F1FF7866900BBB936 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		13A943641FF7866900BBB936 /* SSPayManagerExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SSPayManagerExampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		13A943681FF7866900BBB936 /* SSPayManagerExampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SSPayManagerExampleUITests.swift; sourceTree = "<group>"; };
+		13A9436A1FF7866900BBB936 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		13A943771FF7869200BBB936 /* BasePayManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasePayManager.swift; sourceTree = "<group>"; };
+		13A943781FF7869200BBB936 /* AlipayApiManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlipayApiManager.swift; sourceTree = "<group>"; };
+		13A943791FF7869200BBB936 /* WXPayApiManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WXPayApiManager.swift; sourceTree = "<group>"; };
+		13A943841FF787AE00BBB936 /* AlipaySDK.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = AlipaySDK.bundle; sourceTree = "<group>"; };
+		13A943851FF787AE00BBB936 /* AlipaySDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AlipaySDK.framework; sourceTree = "<group>"; };
+		13A943901FF7880F00BBB936 /* Bridging_Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Bridging_Header.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		13A943421FF7866900BBB936 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1360C9261FF8C62400C6593D /* CoreMotion.framework in Frameworks */,
+				1360C9241FF8C5F400C6593D /* libc++.tbd in Frameworks */,
+				1360C9221FF8C1C800C6593D /* Foundation.framework in Frameworks */,
+				1360C9201FF8C1BC00C6593D /* UIKit.framework in Frameworks */,
+				1360C91E1FF8C16800C6593D /* CoreTelephony.framework in Frameworks */,
+				1360C91C1FF8C15400C6593D /* SystemConfiguration.framework in Frameworks */,
+				1360C91A1FF8C13A00C6593D /* Security.framework in Frameworks */,
+				1360C9181FF8C13000C6593D /* libz.tbd in Frameworks */,
+				1360C9161FF8C12800C6593D /* libsqlite3.0.tbd in Frameworks */,
+				1360C9131FF8BDB200C6593D /* libWeChatSDK.a in Frameworks */,
+				13A9438C1FF787AF00BBB936 /* AlipaySDK.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		13A943561FF7866900BBB936 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				13A9438D1FF787AF00BBB936 /* AlipaySDK.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		13A943611FF7866900BBB936 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				13A9438E1FF787AF00BBB936 /* AlipaySDK.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1360C9141FF8C12800C6593D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1360C9251FF8C62400C6593D /* CoreMotion.framework */,
+				1360C9231FF8C5F300C6593D /* libc++.tbd */,
+				1360C9211FF8C1C800C6593D /* Foundation.framework */,
+				1360C91F1FF8C1BB00C6593D /* UIKit.framework */,
+				1360C91D1FF8C16800C6593D /* CoreTelephony.framework */,
+				1360C91B1FF8C15300C6593D /* SystemConfiguration.framework */,
+				1360C9191FF8C13A00C6593D /* Security.framework */,
+				1360C9171FF8C13000C6593D /* libz.tbd */,
+				1360C9151FF8C12800C6593D /* libsqlite3.0.tbd */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		13A9433C1FF7866900BBB936 = {
+			isa = PBXGroup;
+			children = (
+				13A943761FF7869200BBB936 /* SSPayManager */,
+				13A943471FF7866900BBB936 /* SSPayManagerExample */,
+				13A9435C1FF7866900BBB936 /* SSPayManagerExampleTests */,
+				13A943671FF7866900BBB936 /* SSPayManagerExampleUITests */,
+				13A943461FF7866900BBB936 /* Products */,
+				1360C9141FF8C12800C6593D /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		13A943461FF7866900BBB936 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				13A943451FF7866900BBB936 /* SSPayManagerExample.app */,
+				13A943591FF7866900BBB936 /* SSPayManagerExampleTests.xctest */,
+				13A943641FF7866900BBB936 /* SSPayManagerExampleUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		13A943471FF7866900BBB936 /* SSPayManagerExample */ = {
+			isa = PBXGroup;
+			children = (
+				13A9437D1FF787AE00BBB936 /* SDKs */,
+				13A943481FF7866900BBB936 /* AppDelegate.swift */,
+				13A9434A1FF7866900BBB936 /* ViewController.swift */,
+				13A9434C1FF7866900BBB936 /* Main.storyboard */,
+				13A9434F1FF7866900BBB936 /* Assets.xcassets */,
+				13A943511FF7866900BBB936 /* LaunchScreen.storyboard */,
+				13A943541FF7866900BBB936 /* Info.plist */,
+				13A943901FF7880F00BBB936 /* Bridging_Header.h */,
+			);
+			path = SSPayManagerExample;
+			sourceTree = "<group>";
+		};
+		13A9435C1FF7866900BBB936 /* SSPayManagerExampleTests */ = {
+			isa = PBXGroup;
+			children = (
+				13A9435D1FF7866900BBB936 /* SSPayManagerExampleTests.swift */,
+				13A9435F1FF7866900BBB936 /* Info.plist */,
+			);
+			path = SSPayManagerExampleTests;
+			sourceTree = "<group>";
+		};
+		13A943671FF7866900BBB936 /* SSPayManagerExampleUITests */ = {
+			isa = PBXGroup;
+			children = (
+				13A943681FF7866900BBB936 /* SSPayManagerExampleUITests.swift */,
+				13A9436A1FF7866900BBB936 /* Info.plist */,
+			);
+			path = SSPayManagerExampleUITests;
+			sourceTree = "<group>";
+		};
+		13A943761FF7869200BBB936 /* SSPayManager */ = {
+			isa = PBXGroup;
+			children = (
+				13A943771FF7869200BBB936 /* BasePayManager.swift */,
+				13A943781FF7869200BBB936 /* AlipayApiManager.swift */,
+				13A943791FF7869200BBB936 /* WXPayApiManager.swift */,
+			);
+			name = SSPayManager;
+			path = ../SSPayManager;
+			sourceTree = "<group>";
+		};
+		13A9437D1FF787AE00BBB936 /* SDKs */ = {
+			isa = PBXGroup;
+			children = (
+				13A9437E1FF787AE00BBB936 /* WeChatSDK */,
+				13A943831FF787AE00BBB936 /* AlipaySDK */,
+			);
+			path = SDKs;
+			sourceTree = "<group>";
+		};
+		13A9437E1FF787AE00BBB936 /* WeChatSDK */ = {
+			isa = PBXGroup;
+			children = (
+				1360C90E1FF8BDB200C6593D /* libWeChatSDK.a */,
+				1360C90D1FF8BDB200C6593D /* README.txt */,
+				1360C90F1FF8BDB200C6593D /* WechatAuthSDK.h */,
+				1360C9111FF8BDB200C6593D /* WXApi.h */,
+				1360C9101FF8BDB200C6593D /* WXApiObject.h */,
+			);
+			path = WeChatSDK;
+			sourceTree = "<group>";
+		};
+		13A943831FF787AE00BBB936 /* AlipaySDK */ = {
+			isa = PBXGroup;
+			children = (
+				13A943841FF787AE00BBB936 /* AlipaySDK.bundle */,
+				13A943851FF787AE00BBB936 /* AlipaySDK.framework */,
+			);
+			path = AlipaySDK;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		13A943441FF7866900BBB936 /* SSPayManagerExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 13A9436D1FF7866900BBB936 /* Build configuration list for PBXNativeTarget "SSPayManagerExample" */;
+			buildPhases = (
+				13A943411FF7866900BBB936 /* Sources */,
+				13A943421FF7866900BBB936 /* Frameworks */,
+				13A943431FF7866900BBB936 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SSPayManagerExample;
+			productName = SSPayManagerExample;
+			productReference = 13A943451FF7866900BBB936 /* SSPayManagerExample.app */;
+			productType = "com.apple.product-type.application";
+		};
+		13A943581FF7866900BBB936 /* SSPayManagerExampleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 13A943701FF7866900BBB936 /* Build configuration list for PBXNativeTarget "SSPayManagerExampleTests" */;
+			buildPhases = (
+				13A943551FF7866900BBB936 /* Sources */,
+				13A943561FF7866900BBB936 /* Frameworks */,
+				13A943571FF7866900BBB936 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				13A9435B1FF7866900BBB936 /* PBXTargetDependency */,
+			);
+			name = SSPayManagerExampleTests;
+			productName = SSPayManagerExampleTests;
+			productReference = 13A943591FF7866900BBB936 /* SSPayManagerExampleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		13A943631FF7866900BBB936 /* SSPayManagerExampleUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 13A943731FF7866900BBB936 /* Build configuration list for PBXNativeTarget "SSPayManagerExampleUITests" */;
+			buildPhases = (
+				13A943601FF7866900BBB936 /* Sources */,
+				13A943611FF7866900BBB936 /* Frameworks */,
+				13A943621FF7866900BBB936 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				13A943661FF7866900BBB936 /* PBXTargetDependency */,
+			);
+			name = SSPayManagerExampleUITests;
+			productName = SSPayManagerExampleUITests;
+			productReference = 13A943641FF7866900BBB936 /* SSPayManagerExampleUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		13A9433D1FF7866900BBB936 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = xtcel.com;
+				TargetAttributes = {
+					13A943441FF7866900BBB936 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					13A943581FF7866900BBB936 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 13A943441FF7866900BBB936;
+					};
+					13A943631FF7866900BBB936 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 13A943441FF7866900BBB936;
+					};
+				};
+			};
+			buildConfigurationList = 13A943401FF7866900BBB936 /* Build configuration list for PBXProject "SSPayManagerExample" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 13A9433C1FF7866900BBB936;
+			productRefGroup = 13A943461FF7866900BBB936 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				13A943441FF7866900BBB936 /* SSPayManagerExample */,
+				13A943581FF7866900BBB936 /* SSPayManagerExampleTests */,
+				13A943631FF7866900BBB936 /* SSPayManagerExampleUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		13A943431FF7866900BBB936 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				13A943531FF7866900BBB936 /* LaunchScreen.storyboard in Resources */,
+				13A943501FF7866900BBB936 /* Assets.xcassets in Resources */,
+				13A943891FF787AF00BBB936 /* AlipaySDK.bundle in Resources */,
+				13A9434E1FF7866900BBB936 /* Main.storyboard in Resources */,
+				1360C9121FF8BDB200C6593D /* README.txt in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		13A943571FF7866900BBB936 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				13A9438A1FF787AF00BBB936 /* AlipaySDK.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		13A943621FF7866900BBB936 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				13A9438B1FF787AF00BBB936 /* AlipaySDK.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		13A943411FF7866900BBB936 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				13A9437A1FF7869200BBB936 /* BasePayManager.swift in Sources */,
+				13A9434B1FF7866900BBB936 /* ViewController.swift in Sources */,
+				13A9437B1FF7869200BBB936 /* AlipayApiManager.swift in Sources */,
+				13A943491FF7866900BBB936 /* AppDelegate.swift in Sources */,
+				13A9437C1FF7869200BBB936 /* WXPayApiManager.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		13A943551FF7866900BBB936 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				13A9435E1FF7866900BBB936 /* SSPayManagerExampleTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		13A943601FF7866900BBB936 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				13A943691FF7866900BBB936 /* SSPayManagerExampleUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		13A9435B1FF7866900BBB936 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 13A943441FF7866900BBB936 /* SSPayManagerExample */;
+			targetProxy = 13A9435A1FF7866900BBB936 /* PBXContainerItemProxy */;
+		};
+		13A943661FF7866900BBB936 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 13A943441FF7866900BBB936 /* SSPayManagerExample */;
+			targetProxy = 13A943651FF7866900BBB936 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		13A9434C1FF7866900BBB936 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				13A9434D1FF7866900BBB936 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		13A943511FF7866900BBB936 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				13A943521FF7866900BBB936 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		13A9436B1FF7866900BBB936 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		13A9436C1FF7866900BBB936 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		13A9436E1FF7866900BBB936 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3QF9K9Q47Z;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/SSPayManagerExample/SDKs/AlipaySDK",
+				);
+				GCC_PREFIX_HEADER = "";
+				INFOPLIST_FILE = SSPayManagerExample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/SSPayManagerExample/SDKs/WeChatSDK",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.xtcel.SSPayManagerExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(PROJECT_DIR)/SSPayManagerExample/Bridging_Header.h";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		13A9436F1FF7866900BBB936 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3QF9K9Q47Z;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/SSPayManagerExample/SDKs/AlipaySDK",
+				);
+				GCC_PREFIX_HEADER = "";
+				INFOPLIST_FILE = SSPayManagerExample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/SSPayManagerExample/SDKs/WeChatSDK",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.xtcel.SSPayManagerExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(PROJECT_DIR)/SSPayManagerExample/Bridging_Header.h";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		13A943711FF7866900BBB936 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3QF9K9Q47Z;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/SSPayManagerExample/SDKs/AlipaySDK",
+				);
+				INFOPLIST_FILE = SSPayManagerExampleTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/SSPayManagerExample/SDKs/WeChatSDK",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.xtcel.SSPayManagerExampleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SSPayManagerExample.app/SSPayManagerExample";
+			};
+			name = Debug;
+		};
+		13A943721FF7866900BBB936 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3QF9K9Q47Z;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/SSPayManagerExample/SDKs/AlipaySDK",
+				);
+				INFOPLIST_FILE = SSPayManagerExampleTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/SSPayManagerExample/SDKs/WeChatSDK",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.xtcel.SSPayManagerExampleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SSPayManagerExample.app/SSPayManagerExample";
+			};
+			name = Release;
+		};
+		13A943741FF7866900BBB936 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3QF9K9Q47Z;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/SSPayManagerExample/SDKs/AlipaySDK",
+				);
+				INFOPLIST_FILE = SSPayManagerExampleUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/SSPayManagerExample/SDKs/WeChatSDK",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.xtcel.SSPayManagerExampleUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SSPayManagerExample;
+			};
+			name = Debug;
+		};
+		13A943751FF7866900BBB936 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3QF9K9Q47Z;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/SSPayManagerExample/SDKs/AlipaySDK",
+				);
+				INFOPLIST_FILE = SSPayManagerExampleUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/SSPayManagerExample/SDKs/WeChatSDK",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.xtcel.SSPayManagerExampleUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SSPayManagerExample;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		13A943401FF7866900BBB936 /* Build configuration list for PBXProject "SSPayManagerExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				13A9436B1FF7866900BBB936 /* Debug */,
+				13A9436C1FF7866900BBB936 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		13A9436D1FF7866900BBB936 /* Build configuration list for PBXNativeTarget "SSPayManagerExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				13A9436E1FF7866900BBB936 /* Debug */,
+				13A9436F1FF7866900BBB936 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		13A943701FF7866900BBB936 /* Build configuration list for PBXNativeTarget "SSPayManagerExampleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				13A943711FF7866900BBB936 /* Debug */,
+				13A943721FF7866900BBB936 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		13A943731FF7866900BBB936 /* Build configuration list for PBXNativeTarget "SSPayManagerExampleUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				13A943741FF7866900BBB936 /* Debug */,
+				13A943751FF7866900BBB936 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 13A9433D1FF7866900BBB936 /* Project object */;
+}
